@@ -1,0 +1,10 @@
+[
+  {
+    "clip_id": "c1",
+    "split": "train"
+  },
+  {
+    "clip_id": "c5",
+    "split": "test"
+  }
+]

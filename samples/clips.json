@@ -1,0 +1,58 @@
+[
+  {
+    "clip_id": "c1",
+    "source_run": "r1",
+    "recording": "physical1",
+    "start": 0,
+    "end": 10,
+    "candidate": true
+  },
+  {
+    "clip_id": "c2",
+    "source_run": "r1",
+    "recording": "physical2",
+    "start": 5,
+    "end": 15,
+    "candidate": true
+  },
+  {
+    "clip_id": "c3",
+    "source_run": "r1",
+    "recording": "physical3",
+    "start": 15,
+    "end": 20,
+    "candidate": true
+  },
+  {
+    "clip_id": "c4",
+    "source_run": "r2",
+    "recording": "physical4",
+    "start": 0,
+    "end": 12,
+    "candidate": true
+  },
+  {
+    "clip_id": "c5",
+    "source_run": "r3",
+    "recording": "physical5",
+    "start": 0,
+    "end": 7,
+    "candidate": true
+  },
+  {
+    "clip_id": "bridge",
+    "source_run": "r4",
+    "recording": "physical6",
+    "start": 0,
+    "end": 2,
+    "candidate": false
+  },
+  {
+    "clip_id": "c6",
+    "source_run": "r5",
+    "recording": "physical7",
+    "start": 0,
+    "end": 13,
+    "candidate": true
+  }
+]

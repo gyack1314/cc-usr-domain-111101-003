@@ -1,0 +1,17 @@
+{
+  "name": "防数据泄漏的场景集合分组与锁定切分",
+  "files": [
+    {
+      "path": "clips.json",
+      "key": "clip_id"
+    },
+    {
+      "path": "relations.json",
+      "key": "id"
+    },
+    {
+      "path": "frozen.json",
+      "key": "clip_id"
+    }
+  ]
+}

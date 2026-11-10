@@ -1,0 +1,20 @@
+[
+  {
+    "id": "x1",
+    "left": "c2",
+    "right": "bridge",
+    "kind": "parent_clip"
+  },
+  {
+    "id": "x2",
+    "left": "bridge",
+    "right": "c4",
+    "kind": "transcode"
+  },
+  {
+    "id": "x3",
+    "left": "c3",
+    "right": "c5",
+    "kind": "similar"
+  }
+]
