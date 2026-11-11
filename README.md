@@ -8,11 +8,13 @@ Python 3.11以上，仅依赖标准库，无需真实账号或外部数据服务
 
 ```bash
 python -m datapack.cli inspect samples
+python -m datapack.cli split samples --store state/splits.sqlite3
+python -m datapack.cli verify samples --store state/splits.sqlite3
 python -m unittest discover -s tests -v
 python -m compileall -q datapack tests
 ```
 
-第一条命令检查已有资料，第二条运行原有读取、内容存储和领域原语检查，第三条构建Python字节码。
+第一条命令检查已有资料，第二条按强关联分量生成并版本化提交防泄漏切分，第三条独立复验已提交版本，第四条运行读取、内容存储、领域原语与切分检查，第五条构建Python字节码。冻结冲突演练见`docs/split.md`。
 
 ## 容器
 
@@ -26,4 +28,4 @@ docker run --rm --network none local-datapack python -m unittest discover -s tes
 
 ## 目录
 
-datapack/storage.py提供摘要、原子文件与修订目录；datapack/records.py提供文件读取及重复主键分类；datapack/domain.py提供当前领域原语；tests验证这些已有行为。数据加工结果不由资料检查命令自动生成。
+datapack/storage.py提供摘要、原子文件与修订目录；datapack/records.py提供文件读取及重复主键分类；datapack/domain.py提供当前领域原语；datapack/split.py按强关联分量做防泄漏切分并支持保留/重平衡两种模式；datapack/splitcheck.py是独立复验器；tests验证这些行为。数据加工结果不由资料检查命令自动生成。切分规则、版本化分配文件与退出码见docs/split.md。
